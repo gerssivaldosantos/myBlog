@@ -1,0 +1,17 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body >
+    <header>
+        <h1 >Gerssivaldo Blog</h1>
+    </header>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+</body>
+</html>
